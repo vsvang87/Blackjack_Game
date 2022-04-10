@@ -1,4 +1,3 @@
-/*
 let myCard = document.getElementById("my__card");
 let sum = document.getElementById("sum");
 let gameMessage = document.getElementById("game__message");
@@ -52,12 +51,12 @@ function renderGame() {
   }
   sum.innerText = "Sum: " + total;
   if (total < 21) {
-    message = "You can draw card";
+    message = "Draw card";
   } else if (total === 21) {
     message = "You got Blackjack!";
     hasBlackjack = true;
   } else {
-    message = "You Loose!";
+    message = "Bust!";
     isAlive = false;
   }
   gameMessage.innerText = message;
@@ -73,16 +72,3 @@ function drawCard() {
     renderGame();
   }
 }
-*/
-
-//objects
-let course = {
-  title: "Learn CSS for free",
-  lessons: 16,
-  creator: "Visay Vang",
-  level: 2,
-  length: 16,
-  isFree: true,
-  tags: ["HTML", "CSS"],
-};
-console.log(course.length);
